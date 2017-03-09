@@ -5,9 +5,11 @@
 
 $(function() {
 
-  $('head').append('<link rel="stylesheet" href="https://michaelspellacy.github.io/qa-worm/lint.css">');
-
   $('html').addClass("lint").append('<button id="btn-lint" title="HTML Linter">QA Worm</button>');
+
+  // $('head').append('<link rel="stylesheet" href="lint.css">');
+
+  $('head').append('<link rel="stylesheet" href="https://michaelspellacy.github.io/qa-worm/lint.css">');
 
   $('#btn-lint').on('click', function(){
 
