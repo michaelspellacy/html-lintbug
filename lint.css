@@ -5,7 +5,16 @@
 .lint img:not([alt]) {
   outline: 5px solid #ffa500; }
 .lint iframe:not([title]) {
-  outline: 5px solid pink; }
+  border: 5px solid salmon; }
+  .lint iframe:not([title]):after {
+    background-color: salmon;
+    border-radius: 3px;
+    color: #fff;
+    content: "The <iframe> element is missing a title attribute. This is good for accessibility.";
+    display: inline-block;
+    font: 0.9em/1.5 normal "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 5px 1em;
+    padding: 5px 1em; }
 .lint:not([lang]), .lint[lang=""] {
   outline: 5px solid #ff7f50; }
 .lint meta[charset]:not([charset="UTF-8"]) {
