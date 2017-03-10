@@ -16,7 +16,25 @@
   // Inaccessible Images
 
   img:not([alt]) {
-  outline: 5px solid #ffa500;
+  border: 5px solid #ffa500;
+  }
+
+  .lintbug-img {
+
+    &:before {
+
+      background-color: #ffa500;
+      position: relative;
+      border-radius: 3px;
+      color: #fff;
+      content: "The <img> element alt attribute. If the image is decoration, a 'null alt' must be included.";
+      display: inline-block;
+      font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      margin: 5px 1em;
+      padding: 5px 1em;
+
+    }
+
   }
 
   // Inaccessible Iframe
@@ -35,7 +53,7 @@
       color: #fff;
       content: "The <iframe> element is missing a title attribute. This is good for accessibility.";
       display: inline-block;
-      font: 0.9em/1.5 normal "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       margin: 5px 1em;
       padding: 5px 1em;
 
@@ -108,7 +126,7 @@
     color: #fff;
     content: "A <u> element is in use. Consider using CSS or more semantic markup.";
     display: inline-block;
-    font: 0.9em/1.5 normal "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 5px 1em;
     padding: 5px 1em;
     }
@@ -123,7 +141,7 @@
     color: #fff;
     content: "The <font> element is obsolete. Avoid using in markup.";
     display: inline-block;
-    font: 0.9em/1.5 normal "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font: normal 0.9em/1.5 normal "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 5px 1em;
     padding: 5px 1em;
     }
