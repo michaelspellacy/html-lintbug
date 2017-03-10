@@ -1,60 +1,58 @@
-/*
-Error: Invalid CSS after "...ackground-color": expected ";", was ": #fff;"
-        on line 90 of lint.scss
+.lint *[style] {
+  outline: 5px solid #f00; }
+.lint a:not([href]), .lint a[href="#"], .lint a[href=""], .lint a[href*="javascript:void(0)"], .lint a[onclick] {
+  outline: 5px solid #00f; }
+.lint img:not([alt]) {
+  outline: 5px solid #ffa500; }
+.lint iframe:not([title]) {
+  outline: 5px solid pink; }
+.lint:not([lang]), .lint[lang=""] {
+  outline: 5px solid #ff7f50; }
+.lint meta[charset]:not([charset="UTF-8"]) {
+  outline: 5px solid #dc143c; }
+.lint meta[charset="UTF-8"]:not(:first-child) {
+  outline: 5px solid #dc143c; }
+.lint meta[name="viewport"][content*="user-scalable=no"],
+.lint meta[name="viewport"][content*="maximum-scale"],
+.lint meta[name="viewport"][content*="minimum-scale"] {
+  outline: 5px solid #f0f; }
+.lint input:not([id]),
+.lint select:not([id]),
+.lint textarea:not([id]) {
+  outline: 5px solid #da70d6; }
+.lint label:not([for]) {
+  outline: 5px solid #da70d6; }
+.lint input:not([name]),
+.lint select:not([name]),
+.lint textarea:not([name]),
+.lint form:not([name]):not([id]) {
+  outline: 5px solid #800080; }
+.lint button:empty,
+.lint a:empty {
+  outline: 5px solid #6495ed; }
+.lint script[type="text/javascript"],
+.lint link[rel="stylesheet"][type="text/css"] {
+  border: 5px solid #008080; }
+.lint font:after {
+  display: inline-block;
+  content: "The font element is obsolete. Avoid using.";
+  background-color: #fff;
+  border: 1px #086CD3 solid; }
 
-85:   font {
-86: 
-87:     &:after {
-88:     display: inline-block;
-89:     content: "This font element is obsolete. Avoid using."
-90:     background-color: #fff;
-91:     border: 1px #086CD3 solid;
-92:     }
-93: 
-94:   }
-95: 
+#btn-lint {
+  background: #086CD3 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAArlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8tivQqAAAAOXRSTlMADw0FCPz4FcfzGu7h2L00IMKw5Yu26UKonWrMynNuTzDcoz2CeGBJJNCskGUsh1hUKJNGONRbl3xBi7pFAAAJmUlEQVR42uyY6XLaMBSFjYwXbDBbwEAISwkkBOLGJCT53v/FWrNUTs3m4Ta/ev545kqDzoetqzMy/usvmYm+t5Yd827c4M5M1SbdoFv9vvVrTYDA/FPrWYA1+4b1i4mMJyiVoLevPdrQhpLz1zytq2rZMRvfKbRp7Ws9WBlL+PnP11dKFX8/4NYwXNx9bQozowq9L/O0rqtpqURGysC+dqcN6Hla19WyY9pAIbxbdBqtTl8bkFw/+98UlJE2YKGlDahCYTdPq3BFTa+/86YN7GQB9igxEIwOrX9dzdyvnxgw0gY+sOvRe9X5Pcd5rhnGI0CjKsxvmrtnYmBfrG4MmBPv6/zZHLBvHFF+09w9U3uzZ0NwcH5YB9axHH9xZ8BMDOxrHaASH2F4b0LpQYq/mDawnxcAq+LRb93rgDWT4VeJAf0mtrU62MOTDAMLZhL8KjGgP8WtGuC/ndnrQxvrQYA/MaD34lYRlM7v9aFFKb6a/9CZ8EDCdr7XLWFevLYnHlhfleHuIoYuRNf2xANnwg3UL+NSY6wX8TOhZmE/XsjwZtOuyZwJWiu4ufi9TuGH8JnolLC9ZP3aIvoyrJ67kZNhcLFGovzGAD5UYq4OrbRfpwLdDMMEGrKZIIAwGQsBRim/S8DyMgwdiAX5DceivBn7BBik/HYBXjIMI1hIZqIX+NiMrQCilN8GwCDL4OKbEvy6Cy83YxHANOX3B8AsyzCDoWAmbEF1e9YAhCm/A4A4y1Cw+SGYCcfYu0xchoqZmu+UoH6IoYW/nSeSCX2au9ro1v161oXrwDvE0IM3uUxo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") center/60% no-repeat;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  box-shadow: 6px 7px 17px -6px rgba(0, 0, 0, 0.75);
+  height: 40px;
+  left: 65px;
+  overflow: hidden;
+  position: fixed;
+  text-indent: -999em;
+  width: 50px;
+  z-index: 10000; }
+  #btn-lint.active {
+    opacity: 0.5; }
 
-Backtrace:
-lint.scss:90
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:777:in `block in try_declaration'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ackground-color\": expected \";\", was \": #fff;\"\A         on line 90 of lint.scss\A \A 85:   font {\A 86: \A 87:     &:after {\A 88:     display: inline-block;\A 89:     content: \"This font element is obsolete. Avoid using.\"\A 90:     background-color: #fff;\A 91:     border: 1px #086CD3 solid;\A 92:     }\A 93: \A 94:   }\A 95: "; }
+/*# sourceMappingURL=lint.css.map */
