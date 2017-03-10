@@ -1,20 +1,20 @@
 
-// QA Worm 0.3
+// HTML LintBug 0.5
 // Developer: Michael "Spell" Spellacy, Developer: Michael "Spell" Spellacy. Twitter: @spellacy, GitHub: michaelspellacy
-// Dependency: jQuery (Plain Vanilla coming soon)
+// Dependency: jQuery
 
 $(function() {
 
-  $('html').addClass("lint").append('<button id="btn-lint" type="button" title="HTML LintBug">Debug</button>');
+  $('html').addClass("lintbug").append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
 
   // $('head').append('<link rel="stylesheet" href="lint.css">');
 
   $('head').append('<link id="html-lintbug" rel="stylesheet" href="https://michaelspellacy.github.io/qa-worm/lint.css">');
 
-  $('#btn-lint').on('click', function(){
+  $('#btn-lintbug').on('click', function(){
 
     $(this).toggleClass('active');
-    $('html').toggleClass('lint');
+    $('html').toggleClass('lintbug');
 
   });
 
