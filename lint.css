@@ -185,6 +185,7 @@
   .lint a.disabled[href]:not([tabindex="-1"])::after,
   .lint button.disabled:not([disabled])::after,
   .lint [data-toggle="dropdown"]:not([aria-haspopup])::after, .lint .lintbug-img::after, .lint .lintbug-iframe::after {
+    background-color: #086CD3 !important;
     position: relative !important;
     border-radius: 3px !important;
     color: #fff !important;
