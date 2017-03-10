@@ -27,7 +27,7 @@
       position: relative;
       border-radius: 3px;
       color: #fff;
-      content: 'No <img> alt attribute! If the image is decorative, a "null alt" must be included (e.g., alt="")';
+      content: 'No alt attribute present! If the image is decorative, a "null alt" must be included (e.g., <img src="..." alt="">)';
       display: inline-block;
       font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       margin: 5px 1em;
