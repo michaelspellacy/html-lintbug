@@ -196,28 +196,28 @@
     content: 'Do you mean for this to be a link or a <button>? It does not link to anything!' !important; }
   .lint a[href=""]:after, .lint a[href$="#"]:after, .lint a[href^="javascript"]:after {
     content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!' !important; }
-  .lint .button:not(a):not(button):not(input):not([tabindex])::after,
-  .lint .btn:not(a):not(button):not(input):not([tabindex])::after {
+  .lint .button:not(a):not(button):not(input):not([tabindex]):after,
+  .lint .btn:not(a):not(button):not(input):not([tabindex]):after {
     content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important; }
-  .lint a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after,
-  .lint a[role="button"][href=""]::after, .lint a[role="button"][href$="#"]::after, .lint a[role="button"][href^="javascript"]::after {
+  .lint a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]):after,
+  .lint a[role="button"][href=""]:after, .lint a[role="button"][href$="#"]:after, .lint a[role="button"][href^="javascript"]:after {
     content: 'Either use a proper href fallback or just use a button element.' !important; }
-  .lint a[href].button[class*="disabled"]::after,
-  .lint a[href].disabled::after,
-  .lint a[href][class*="button"][class*="disabled"]::after {
+  .lint a[href].button[class*="disabled"]:after,
+  .lint a[href].disabled:after,
+  .lint a[href][class*="button"][class*="disabled"]:after {
     content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; }
-  .lint [class*="toggle"]:not([aria-pressed]) {
+  .lint [class*="toggle"]:not([aria-pressed]):after {
     content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important; }
-  .lint form button:not([type])::after {
+  .lint form button:not([type]):after {
     content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".' !important; }
-  .lint a:empty:not([aria-label]):not([aria-labelledby])::after,
-  .lint button:empty:not([aria-label]):not([aria-labelledby])::after,
-  .lint button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after,
-  .lint a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after {
+  .lint a:empty:not([aria-label]):not([aria-labelledby]):after,
+  .lint button:empty:not([aria-label]):not([aria-labelledby]):after,
+  .lint button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after,
+  .lint a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]):after {
     content: 'All buttons and links should have text content, an image with alt text or an ARIA label.' !important; }
-  .lint figcaption::after {
+  .lint figcaption:after {
     content: '<figcaption>s must belong to parent <figure>s.' !important; }
-  .lint figure figcaption::after {
+  .lint figure figcaption:after {
     content: '' !important;
     display: none !important; }
   .lint form:not([action])::after {

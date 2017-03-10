@@ -111,44 +111,76 @@ a[href=""], a[href$="#"], a[href^="javascript"] {
 
 }
 
-.button:not(a):not(button):not(input):not([tabindex])::after, 
-.btn:not(a):not(button):not(input):not([tabindex])::after {
+.button:not(a):not(button):not(input):not([tabindex]), 
+.btn:not(a):not(button):not(input):not([tabindex]) {
+
+  &:after {
   content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
+  }
+
 }
 
-a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"])::after, 
-a[role="button"][href=""]::after, a[role="button"][href$="#"]::after, a[role="button"][href^="javascript"]::after {
-   content: 'Either use a proper href fallback or just use a button element.' !important;
+a[role="button"]:not([href*="/"]):not([href*="."]):not([href*="?"]), 
+a[role="button"][href=""], a[role="button"][href$="#"], a[role="button"][href^="javascript"] {
+
+  &:after {
+  content: 'Either use a proper href fallback or just use a button element.' !important;
+  }
+
 }
 
-a[href].button[class*="disabled"]::after,
-a[href].disabled::after,  
-a[href][class*="button"][class*="disabled"]::after {
-   content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; 
+a[href].button[class*="disabled"],
+a[href].disabled,  
+a[href][class*="button"][class*="disabled"] {
+
+  &:after {
+  content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; 
+  }
+
 }
 
 [class*="toggle"]:not([aria-pressed]) {
+
+  &:after {
   content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important;
+  }
+
 }
 
-form button:not([type])::after {
+form button:not([type]) {
+
+  &:after {
   content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".' !important;
+  }
+
 }
 
-a:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:empty:not([aria-label]):not([aria-labelledby])::after, 
-button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after, 
-a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt])::after {
+a:empty:not([aria-label]):not([aria-labelledby]), 
+button:empty:not([aria-label]):not([aria-labelledby]), 
+button:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]), 
+a:not([aria-label]):not([aria-labelledby]) img:only-child:not([alt]) {
+
+  &:after {
   content: 'All buttons and links should have text content, an image with alt text or an ARIA label.' !important;
+  }
+
 }
 
-figcaption::after {
+figcaption {
+
+  &:after {
   content: '<figcaption>s must belong to parent <figure>s.' !important;
+  }
+
 }
 
-figure figcaption::after {
+figure figcaption {
+
+  &:after {
   content: '' !important;
   display: none !important;
+  }
+
 }
 
 /**
