@@ -85,13 +85,14 @@
   u {
 
     &:after {
-    display: inline-block;
-    margin: 0 1em;
-    border-radius: 3px;
-    content: "A <u> element is in use. Consider using CSS or more semantic markup.";
     background-color: #fff;
     border: 2px #086CD3 solid;
+    border-radius: 3px;
+    color: #000;
+    content: "A <u> element is in use. Consider using CSS or more semantic markup.";
+    display: inline-block;
     font: 1em/1.5 HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 0 1em;
     }
 
   }
@@ -99,12 +100,14 @@
   font {
 
     &:after {
-    display: inline-block;
-    margin: 0 1em;
-    border-radius: 3px;
-    content: "The <font> element is obsolete. Avoid using!";
     background-color: #fff;
     border: 1px #086CD3 solid;
+    border-radius: 3px;
+    color: #000;
+    content: "The <font> element is obsolete. Avoid using!";
+    display: inline-block;
+    font: 1em/1.5 HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 0 1em;
     }
 
   }

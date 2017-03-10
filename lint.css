@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...ent is obsolete": expected ";", was ". Avoid using!";"
-        on line 105 of lint.scss
+        on line 107 of lint.scss
 
-100: 
-101:     &:after {
-102:     display: inline-block;
-103:     margin: 0 1em;
-104:     border-radius: 3px;
-105:     content: "The <font> element is obsolete. Avoid using!";
-106:     background-color: #fff;
-107:     border: 1px #086CD3 solid;
-108:     }
-109: 
-110:   }
+102:     &:after {
+103:     background-color: #fff;
+104:     border: 1px #086CD3 solid;
+105:     border-radius: 3px;
+106:     color: #000;
+107:     content: "The <font> element is obsolete. Avoid using!";
+108:     display: inline-block;
+109:     font: 1em/1.5 HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+110:     margin: 0 1em;
+111:     }
+112: 
 
 Backtrace:
-lint.scss:105
+lint.scss:107
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
@@ -57,4 +57,4 @@ lint.scss:105
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ent is obsolete\": expected \";\", was \". Avoid using!\";\"\A         on line 105 of lint.scss\A \A 100: \A 101:     &:after {\A 102:     display: inline-block;\A 103:     margin: 0 1em;\A 104:     border-radius: 3px;\A 105:     content: \"The <font> element is obsolete. Avoid using!\";\A 106:     background-color: #fff;\A 107:     border: 1px #086CD3 solid;\A 108:     }\A 109: \A 110:   }"; }
+  content: "Error: Invalid CSS after \"...ent is obsolete\": expected \";\", was \". Avoid using!\";\"\A         on line 107 of lint.scss\A \A 102:     &:after {\A 103:     background-color: #fff;\A 104:     border: 1px #086CD3 solid;\A 105:     border-radius: 3px;\A 106:     color: #000;\A 107:     content: \"The <font> element is obsolete. Avoid using!\";\A 108:     display: inline-block;\A 109:     font: 1em/1.5 HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;\A 110:     margin: 0 1em;\A 111:     }\A 112: "; }
