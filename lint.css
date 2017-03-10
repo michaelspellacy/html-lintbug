@@ -45,7 +45,7 @@
 .lint font:after {
   background-color: #086CD3;
   border-radius: 3px;
-  color: #000;
+  color: #fff;
   content: "The <font> element is obsolete. Avoid using in markup.";
   display: inline-block;
   font: 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
