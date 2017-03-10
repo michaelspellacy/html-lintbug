@@ -22,9 +22,9 @@
   // Inaccessible Iframe
 
   iframe:not([title]) {
-  border: 5px solid salmon;
+  border: 5px solid salmon !important;
 
-    &:after {
+    &:before {
     background-color: salmon;
     border-radius: 3px;
     color: #fff;

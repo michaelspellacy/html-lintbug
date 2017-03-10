@@ -5,8 +5,8 @@
 .lint img:not([alt]) {
   outline: 5px solid #ffa500; }
 .lint iframe:not([title]) {
-  border: 5px solid salmon; }
-  .lint iframe:not([title]):after {
+  border: 5px solid salmon !important; }
+  .lint iframe:not([title]):before {
     background-color: salmon;
     border-radius: 3px;
     color: #fff;
