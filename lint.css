@@ -233,7 +233,7 @@
   .lint embed::after, .lint marquee::after, .lint nobr::after, .lint noembed::after, .lint wbr::after {
     content: 'This element is deprecated, non-standard or obsolete.' !important; }
   .lint *:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
-    content: 'This element is empty. Why?' !important; }
+    content: 'This element is empty. Why?'; }
   .lint section > section:first-child::after,
   .lint article > section:first-child::after,
   .lint article > article:first-child::after,
