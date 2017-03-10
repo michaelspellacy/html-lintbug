@@ -18,4 +18,8 @@ $(function() {
 
   });
 
+  // Rules for elements where pseudo's not possible
+
+  $('iframe:not([title])').after('<div class="lintbug-iframe"/>');
+
 });
