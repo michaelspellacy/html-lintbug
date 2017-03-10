@@ -6,7 +6,7 @@
   outline: 5px solid #ffa500; }
 .lint iframe:not([title]) {
   border: 5px solid salmon !important; }
-.lint .lintbug-iframe:before {
+.lint .lintbug-iframe:after {
   background-color: salmon;
   border-radius: 3px;
   color: #fff;
