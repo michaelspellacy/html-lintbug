@@ -4,22 +4,26 @@
 
 $(function() {
 
-  $('html').addClass("lintbug").append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
+  if(!$(".lintbug").length) {
 
-  // $('head').append('<link rel="stylesheet" href="lintbug.css">');
+  	$('html').addClass("lintbug").append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
 
-  $('head').append('<link id="html-lintbug" rel="stylesheet" href="https://michaelspellacy.github.io/html-lintbug/lintbug.css">');
+  	// $('head').append('<link rel="stylesheet" href="lintbug.css">');
 
-  $('#btn-lintbug').on('click', function(){
+  	$('head').append('<link id="html-lintbug" rel="stylesheet" href="https://michaelspellacy.github.io/html-lintbug/lintbug.css">');
 
-    $(this).toggleClass('active');
-    $('html').toggleClass('lintbug');
+  	$('#btn-lintbug').on('click', function(){
 
-  });
+    	$(this).toggleClass('active');
+    	$('html').toggleClass('lintbug');
 
-  // Rules for elements where pseudo's not possible
+  	});
 
-  $('iframe:not([title])').after('<div class="lintbug-iframe"/>');
-  $('img:not([alt])').after('<div class="lintbug-img"/>');
+  	// Rules for elements where pseudo's not possible
+
+  	$('iframe:not([title])').after('<div class="lintbug-iframe"/>');
+  	$('img:not([alt])').after('<div class="lintbug-img"/>');
+
+  }
 
 });
