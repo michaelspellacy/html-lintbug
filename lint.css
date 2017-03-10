@@ -33,7 +33,7 @@
 .lint script[type="text/javascript"],
 .lint link[rel="stylesheet"][type="text/css"] {
   border: 5px solid #008080; }
-.lint font:after {
+.lint u:after {
   display: inline-block;
   content: "A <u> element is in use. Consider using CSS or HTML headings.";
   background-color: #fff;
