@@ -194,6 +194,7 @@
       display: inline-block !important;
       font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
       margin: 5px !important;
+      min-width: 260px !important;
       padding: 10px 20px 10px 85px !important;
       position: relative; }
   .lintbug a:not([href]):after {
