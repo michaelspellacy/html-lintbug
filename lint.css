@@ -6,10 +6,6 @@
   * Please leave this comment block intact as attribution
   */
   /**
-  * Button and hyperlink errors
-  ----------------------------------------------------------------------
-  */
-  /**
   * Form errors
   ----------------------------------------------------------------------
   */
@@ -195,10 +191,10 @@
       display: inline-block !important;
       font: normal 0.9rem/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif !important;
       margin: 5px !important;
-      padding: 5px !important; }
-  .lint a:not([href])::after {
+      padding: 5px 10px !important; }
+  .lint a:not([href]):after {
     content: 'Do you mean for this to be a link or a <button>? It does not link to anything!' !important; }
-  .lint a[href=""]::after, .lint a[href$="#"]::after, .lint a[href^="javascript"]::after {
+  .lint a[href=""]:after, .lint a[href$="#"]:after, .lint a[href^="javascript"]:after {
     content: 'Do you mean for this to be a <button>? It is a link that does not go anywhere!' !important; }
   .lint .button:not(a):not(button):not(input):not([tabindex])::after,
   .lint .btn:not(a):not(button):not(input):not([tabindex])::after {
