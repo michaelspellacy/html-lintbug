@@ -5,7 +5,7 @@
 
 $(function() {
 
-  $('html').addClass("lint").append('<button id="btn-lint" title="HTML Linter">QA Worm</button>');
+  $('html').addClass("lint").append('<button id="btn-lint" title="HTML LintBug">QA Worm</button>');
 
   // $('head').append('<link rel="stylesheet" href="lint.css">');
 
