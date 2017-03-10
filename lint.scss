@@ -85,14 +85,14 @@
   u {
 
     &:after {
-    background-color: #fff;
-    border: 2px #086CD3 solid;
+    background-color: #086CD3;
     border-radius: 3px;
-    color: #000;
+    color: #fff;
     content: "A <u> element is in use. Consider using CSS or more semantic markup.";
     display: inline-block;
     font: 1em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 0 1em;
+    padding: 0 1em;
     }
 
   }
@@ -100,14 +100,14 @@
   font {
 
     &:after {
-    background-color: #fff;
-    border: 2px #086CD3 solid;
+    background-color: #086CD3;
     border-radius: 3px;
     color: #000;
     content: "A <u> element is in use. Consider using CSS or more semantic markup.";
     display: inline-block;
     font: 1em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 0 1em;
+    padding: 0 1em;
     }
 
   }
