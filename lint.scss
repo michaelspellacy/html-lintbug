@@ -51,7 +51,7 @@
       position: relative;
       border-radius: 3px;
       color: #fff;
-      content: "The <iframe> element is missing a title attribute. This is good for accessibility.";
+      content: 'The <iframe> element is missing a title attribute and value (e.g., <iframe src="..." title="Page or media title">)';
       display: inline-block;
       font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       margin: 5px 1em;
