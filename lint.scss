@@ -86,9 +86,12 @@
 
     &:after {
     display: inline-block;
-    content: "A <u> element is in use. Consider using CSS or HTML headings.";
+    margin: 0 1em;
+    border-radius: 3px;
+    content: "A <u> element is in use. Consider using CSS or more semantic markup.";
     background-color: #fff;
-    border: 1px #086CD3 solid;
+    border: 2px #086CD3 solid;
+    font: 1em/1.5 HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     }
 
   }
@@ -97,7 +100,9 @@
 
     &:after {
     display: inline-block;
-    content: "The <font> element is obsolete. Avoid using.";
+    margin: 0 1em;
+    border-radius: 3px;
+    content: "The <font> element is obsolete. Avoid using!";
     background-color: #fff;
     border: 1px #086CD3 solid;
     }
