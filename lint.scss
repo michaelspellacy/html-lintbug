@@ -3,141 +3,6 @@
 
 .lint {
 
-  *[style] {
-  outline: 5px solid #f00;
-  }
-
-  // Faulty or Missing Link Targets
-
-  a:not([href]), a[href="#"], a[href=""], a[href*="javascript:void(0)"], a[onclick] {
-  outline: 5px solid #00f;
-  }
-
-  // Inaccessible Images
-
-  img:not([alt]) {
-  border: 5px solid #ffa500;
-  }
-
-  .lintbug-img {
-
-    &:before {
-
-      background-color: #ffa500;
-      position: relative;
-      border-radius: 3px;
-      color: #fff;
-      content: 'No alt attribute present! If the image is decorative, a "null alt" must be included (e.g., <img src="..." alt="">)';
-      display: inline-block;
-      font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-      margin: 5px 1em;
-      padding: 5px 1em;
-
-    }
-
-  }
-
-  // Inaccessible Iframe
-
-  iframe:not([title]) {
-  border: 5px solid salmon !important;
-  }
-
-  .lintbug-iframe {
-
-    &:before {
-
-      background-color: salmon;
-      position: relative;
-      border-radius: 3px;
-      color: #fff;
-      content: 'The <iframe> element is missing a title attribute and value (e.g., <iframe src="..." title="Page or media title">)';
-      display: inline-block;
-      font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-      margin: 5px 1em;
-      padding: 5px 1em;
-
-    }
-
-  }
-
-  // Missing Document Language
-
-  &:not([lang]), &[lang=""] {
-  outline: 5px solid #ff7f50;
-  }
-
-  // Incorrect Character Set
-
-  meta[charset]:not([charset="UTF-8"]) {
-  outline: 5px solid #dc143c;
-  }
-
-  meta[charset="UTF-8"]:not(:first-child) {
-  outline: 5px solid #dc143c;
-  }
-
-  // Inaccessible Viewport Attributes
-
-  meta[name="viewport"][content*="user-scalable=no"],
-  meta[name="viewport"][content*="maximum-scale"],
-  meta[name="viewport"][content*="minimum-scale"] {
-  outline: 5px solid #f0f;
-  }
-
-  // Unlabelled Form Elements
-
-  input:not([id]),
-  select:not([id]),
-  textarea:not([id]) {
-  outline: 5px solid #da70d6;
-  }
-
-  label:not([for]) {
-  outline: 5px solid #da70d6;
-  }
-
-  input:not([name]),
-  select:not([name]),
-  textarea:not([name]),
-  form:not([name]):not([id]) {
-  outline: 5px solid #800080;
-  }
-
-  // Empty Interactive Elements
-
-  button:empty,
-  a:empty {
-  outline: 5px solid #6495ed;
-  }
-
-  // Unnecessary or Deprecated Attributes
-
-  script[type="text/javascript"],
-  link[rel="stylesheet"][type="text/css"] {
-  border: 5px solid #008080;
-  }
-
-  u {
-
-    &:after {
-    background-color: #086CD3;
-    }
-
-  }
-
-  font {
-
-    &:after {
-    background-color: #086CD3;
-    content: "The <font> element is obsolete. Avoid using in markup.";
-    }
-
-  }
-
-
-
-
 /*!
 * Revenge CSS v 1.0 
 * Copyright 2013, Heydon Pickering: http://www.heydonworks.com
@@ -280,7 +145,7 @@ li.disabled > a[href]:not([tabindex="-1"])::after,
 li.disabled > button:not([disabled])::after, 
 a.disabled[href]:not([tabindex="-1"])::after,
 button.disabled:not([disabled])::after, 
-[data-toggle="dropdown"]:not([aria-haspopup])::after
+[data-toggle="dropdown"]:not([aria-haspopup])::after, .lintbug-img::after, .lintbug-iframe::after
 {
 
       position: relative !important;
@@ -524,7 +389,33 @@ button.disabled:not([disabled])::after {
 
 
 
+  .lintbug-img {
 
+    &:after {
+
+      content: 'No alt attribute present! If the image is decorative, a "null alt" must be included (e.g., <img src="..." alt="">)';
+
+    }
+
+  }
+
+  .lintbug-iframe {
+
+    &:after {
+
+      background-color: salmon;
+      position: relative;
+      border-radius: 3px;
+      color: #fff;
+      content: 'The <iframe> element is missing a title attribute and value (e.g., <iframe src="..." title="Page or media title">)';
+      display: inline-block;
+      font: normal 0.9em/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      margin: 5px 1em;
+      padding: 5px 1em;
+
+    }
+
+  }
 
 
 
