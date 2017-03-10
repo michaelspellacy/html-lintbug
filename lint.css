@@ -35,7 +35,12 @@
   border: 5px solid #008080; }
 .lint font:after {
   display: inline-block;
-  content: "The font element is obsolete. Avoid using.";
+  content: "A <u> element is in use. Consider using CSS or HTML headings.";
+  background-color: #fff;
+  border: 1px #086CD3 solid; }
+.lint font:after {
+  display: inline-block;
+  content: "The <font> element is obsolete. Avoid using.";
   background-color: #fff;
   border: 1px #086CD3 solid; }
 
