@@ -6,8 +6,9 @@
   outline: 5px solid #ffa500; }
 .lint iframe:not([title]) {
   border: 5px solid salmon !important; }
-.lint .lintbug-iframe:after {
+.lint .lintbug-iframe:before {
   background-color: salmon;
+  position: relative;
   border-radius: 3px;
   color: #fff;
   content: "The <iframe> element is missing a title attribute. This is good for accessibility.";

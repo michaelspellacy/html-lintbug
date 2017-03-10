@@ -27,9 +27,10 @@
 
   .lintbug-iframe {
 
-    &:after {
+    &:before {
 
       background-color: salmon;
+      position: relative;
       border-radius: 3px;
       color: #fff;
       content: "The <iframe> element is missing a title attribute. This is good for accessibility.";
