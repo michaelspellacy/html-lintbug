@@ -299,7 +299,7 @@
     content: 'No alt attribute present! If the image is decorative, a "null alt" must be included.' !important; }
   .lintbug .lintbug-iframe:after {
     content: 'The <iframe> element is missing a title attribute and value.' !important; }
-  .lintbug .lintbug-override {
+  .lintbug .lintbug-override:after {
     display: none !important; }
 
 #btn-lintbug {

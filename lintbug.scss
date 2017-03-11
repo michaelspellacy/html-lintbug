@@ -394,7 +394,11 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   }
 
   .lintbug-override {
-  display: none !important;
+
+    &:after {
+    display: none !important;
+    }
+
   }
 
 }
