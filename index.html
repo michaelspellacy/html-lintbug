@@ -1,10 +1,37 @@
 
-<iframe allowfullscreen src="https://www.youtube.com/embed/33XoZ-V20Rk"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LintBug</title>
+</head>
 
-<img src="http://placehold.it/350x150">
+<body>
 
-<a class="bookmarklet" href="javascript:(function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://michaelspellacy.github.io/html-lintbug/init.js'); document.body.appendChild(jsCode);}());">HTML LintBug Bookmarklet</a>
+	<h1>HTML LintBug</h1>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<h2>Examples</h2>
 
-<script src="init.js"></script>
+	<iframe allowfullscreen src="https://www.youtube.com/embed/33XoZ-V20Rk"></iframe>
+
+	<img src="http://placehold.it/350x150">
+
+	<h2>Implementation</h2>
+
+	<h3>Script</h3>
+
+	<p>Cal the following script from your own page:</p>
+
+	&lt;script src="https://michaelspellacy.github.io/html-lintbug/init.js"&gt;&lt;/script&gt;
+
+	<h3>Bookmarklet</h3>
+
+	<p><a class="lintbug-override" href="javascript:(function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://michaelspellacy.github.io/html-lintbug/init.js'); document.body.appendChild(jsCode);}());">HTML LintBug</a></p>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<script src="init.js"></script>
+
+</body>
+</html>

@@ -393,9 +393,13 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
 
   }
 
+  .lintbug-override {
+  display: none !important;
+  }
+
 }
 
-// Lint Button
+// LintBug Button
 
 #btn-lintbug {
 background: $lintbug-background-color url($lintbug-background-image) center / 60% no-repeat !important;
