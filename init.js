@@ -12,12 +12,14 @@ $(function() {
 
   	$('head').append('<link id="html-lintbug" rel="stylesheet" href="https://michaelspellacy.github.io/html-lintbug/lintbug.css">');
     
-    $('html').append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
+    $('html').addClass('lintbug');
+
+    $('body').append('<button id="btn-lintbug" class="active" type="button" title="HTML LintBug">Debug</button>');
 
     if($.cookie('html-lintbug-state') == 'true') {
 
-      $('html').addClass('lintbug');
-      $('#btn-lintbug').addClass('active');
+      $('html').removeClass('lintbug');
+      $('#btn-lintbug').removeClass('active');
 
     }
   	
