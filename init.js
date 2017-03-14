@@ -16,7 +16,7 @@ $(function() {
 
     $('body').append('<button id="btn-lintbug" class="active" type="button" title="HTML LintBug">Debug</button>');
 
-    if($.cookie('html-lintbug-state') == 'true') {
+    if($.cookie('html-lintbug-state') == 'false') {
 
       $('html').removeClass('lintbug');
       $('#btn-lintbug').removeClass('active');
