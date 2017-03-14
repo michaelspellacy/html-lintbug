@@ -413,6 +413,7 @@ bottom: 0 !important;
 box-shadow: 6px 7px 17px -6px rgba(0,0,0,0.75) !important;
 height: 40px !important;
 left: 65px !important;
+opacity: 0.5 !important;
 overflow: hidden !important;
 position: fixed !important;
 text-indent: -999em !important;
@@ -420,7 +421,7 @@ width: 50px !important;
 z-index: 10000 !important;
 
   &.active {
-  opacity: 0.5 !important;
+  opacity: 1 !important;
   }
 
 }
