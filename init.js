@@ -14,9 +14,9 @@ $(function() {
 
     $('html').addClass('lintbug');
 
-    // $('body').append('<button id="btn-lintbug" class="active" type="button" title="HTML LintBug">Debug</button>');
+    $('body').append('<button id="btn-lintbug" class="active" type="button" title="HTML LintBug">Debug</button>');
 
-    $('body').append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
+    // $('body').append('<button id="btn-lintbug" type="button" title="HTML LintBug">Debug</button>');
 
     /* if($.cookie('html-lintbug-state') == 'false') {
 
