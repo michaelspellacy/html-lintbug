@@ -11,7 +11,7 @@ $(function() {
   	// $('head').append('<link rel="stylesheet" href="lintbug.css">');
 
   	$('head').append('<link id="html-lintbug" rel="stylesheet" href="https://michaelspellacy.github.io/html-lintbug/lintbug.css">');
-    
+
     $('html').addClass('lintbug');
 
     $('body').append('<button id="btn-lintbug" class="active" type="button" title="HTML LintBug">Debug</button>');
@@ -22,7 +22,7 @@ $(function() {
       $('#btn-lintbug').removeClass('active');
 
     }
-  	
+
     $('#btn-lintbug').on('click', function(){
 
     	$(this).toggleClass('active');
