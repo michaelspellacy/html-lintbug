@@ -203,15 +203,15 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   */
 
   form:not([action])::after {
-    content: 'Forms must have action attributes.' !important;
+  content: 'Forms must have action attributes.' !important;
   }
 
   fieldset > *:first-child:not(legend)::after {
-    content: 'Place a legend as the first element in this fieldset.' !important;
+  content: 'Place a legend as the first element in this fieldset.' !important;
   }
 
   button.disabled:not([disabled]):not([readonly])::after {
-    content: 'Use a disabled or readonly attribute on this button.' !important;
+  content: 'Use a disabled or readonly attribute on this button.' !important;
   }
 
   /**
@@ -223,7 +223,7 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   font::after, frame::after, frameset::after, isindex::after, listing::after, menu::after, multicol::after, 
   plaintext::after, strike::after, u::after, xmp::after, bgsound::after, blink::after, comment::after, 
   embed::after, marquee::after, nobr::after, noembed::after, wbr::after {
-    content: 'This element is deprecated, non-standard or obsolete.' !important;
+  content: 'This element is deprecated, non-standard or obsolete.' !important;
   }
 
   /**
@@ -232,7 +232,7 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   */
 
   *:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
-    content: 'This element is empty. Why?';
+  content: 'This element is empty. Why?';
   }
 
   /**
@@ -252,31 +252,31 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
     content: 'Sectioning elements are not arbitrary wrappers. Use <div>s here.' !important;
   }
 
-  body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
-    content: 'Use role="banner" on this header element.' !important;
-  }
+  // body > header:not([role="banner"])::after, body > div > header:not([role="banner"])::after {
+  // content: 'Use role="banner" on this header element.' !important;
+  // }
 
-  body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
-    content: 'Use role="contentinfo" on this footer element.' !important;
-  }
+  // body > footer:not([role="contentinfo"])::after, body > div > footer:not([role="contentinfo"])::after {
+  // content: 'Use role="contentinfo" on this footer element.' !important;
+  // }
 
   section [role="banner"]::after, section [role="contentinfo"]::after, 
   article [role="banner"]::after, article [role="contentinfo"]::after, 
   aside [role="banner"]::after, aside [role="contentinfo"]::after {
-    content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.' !important;
+  content: 'Do not put [role="banner"] or [role="contentinfo"] inside a subsection.' !important;
   }
 
   #main:not(main):not([role="main"])::after {
-      content: 'Use the standard <main> element or role of main.' !important;
+  content: 'Use the standard <main> element or role of main.' !important;
   }
 
   #footer:not(footer):not([role="contentinfo"])::after {
-      content: 'Use the standard <footer> element or contentinfo role' !important;
+  content: 'Use the standard <footer> element or contentinfo role' !important;
   }
 
   #header:not(header):not([role="banner"])::after,
   #banner:not(header):not([role="banner"])::after {
-      content: 'Use the standard <header> element or banner role' !important;
+  content: 'Use the standard <header> element or banner role' !important;
   }
 
   /**
@@ -285,15 +285,15 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   */
 
   [align]::after, [alink]::after, [background]::after, [bgcolor]::after, [border]::after, [clear]::after, [height]::after, [hspace]::after, [link]::after, [nowrap]::after, [start]::after, [vlink]::after, [vspace]::after {
-    content: 'You are using a deprecated attribute. Use CSS instead.' !important;
+  content: 'You are using a deprecated attribute. Use CSS instead.' !important;
   }
 
   script[language]::after {
-    content: 'The language attribute is superceded by type. Use type.' !important;
+  content: 'The language attribute is superceded by type. Use type.' !important;
   }
 
   table[summary]::after {
-    content: 'The summary attribute is deprecated. Perhaps use the <caption> element.' !important;
+  content: 'The summary attribute is deprecated. Perhaps use the <caption> element.' !important;
   }
 
   /**
@@ -303,15 +303,15 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
 
   ol > *:not(li)::after, 
   ul > *:not(li)::after {
-    content: 'Only <li> can be a direct child of <ul> or <ol>.' !important;
+  content: 'Only <li> can be a direct child of <ul> or <ol>.' !important;
   }
 
   dl > *:not(dt):not(dd)::after {
-    content: 'This element does not belong directly inside a definition list.' !important;
+  content: 'This element does not belong directly inside a definition list.' !important;
   }
 
   dt + *:not(dd)::after {
-    content: 'Definitions must follow definition titles.' !important;
+  content: 'Definitions must follow definition titles.' !important;
   }
 
   /**
@@ -322,7 +322,7 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   abbr div::after, b div::after, i div::after, span div::after, em div::after, 
   strong div::after, small div::after, cite div::after, q div::after, code div::after, 
   label div::after {
-    content: 'Do not put <div>s inside inline elements.' !important;
+  content: 'Do not put <div>s inside inline elements.' !important;
   }
 
   /**
@@ -349,13 +349,13 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   Make two lists! */
 
   li.dropdown-header::after {
-    content: 'Do not use list items as headers for lists, obvs' !important;
+  content: 'Do not use list items as headers for lists, obvs' !important;
   }
 
   /* Only <button>s and, to a lesser extent, <a>s WITH HREFS are keyboard functional as "buttons" */
 
   .btn:not(button):not([href])::after {
-    content: 'This is not an accessible control. Use a <button> or a <a> with href.' !important;
+  content: 'This is not an accessible control. Use a <button> or a <a> with href.' !important;
   }
 
   /* Disabled links and buttons should be disabled correctly */
@@ -364,13 +364,13 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
   li.disabled > button:not([disabled])::after, 
   a.disabled[href]::after,
   button.disabled:not([disabled])::after {
-    content: 'Disable buttons with disabled attr and links by removing href' !important;
+  content: 'Disable buttons with disabled attr and links by removing href' !important;
   }
 
   /* The submenu should be indicated with aria-haspopup */
 
   [data-toggle="dropdown"]:not([aria-haspopup])::after {
-    content: 'Indicate the hidden menu with aria-haspopup' !important;
+  content: 'Indicate the hidden menu with aria-haspopup' !important;
   }
 
   .lintbug-img {

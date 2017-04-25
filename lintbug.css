@@ -244,10 +244,6 @@
   .lintbug aside > article:first-child::after,
   .lintbug aside > section:first-child::after {
     content: 'Sectioning elements are not arbitrary wrappers. Use <div>s here.' !important; }
-  .lintbug body > header:not([role="banner"])::after, .lintbug body > div > header:not([role="banner"])::after {
-    content: 'Use role="banner" on this header element.' !important; }
-  .lintbug body > footer:not([role="contentinfo"])::after, .lintbug body > div > footer:not([role="contentinfo"])::after {
-    content: 'Use role="contentinfo" on this footer element.' !important; }
   .lintbug section [role="banner"]::after, .lintbug section [role="contentinfo"]::after,
   .lintbug article [role="banner"]::after, .lintbug article [role="contentinfo"]::after,
   .lintbug aside [role="banner"]::after, .lintbug aside [role="contentinfo"]::after {
