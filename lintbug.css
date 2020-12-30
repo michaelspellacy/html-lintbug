@@ -207,8 +207,8 @@
   .lintbug a[href].disabled:after,
   .lintbug a[href][class*="button"][class*="disabled"]:after {
     content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important; }
-  .lintbug [class*="toggle"]:not([aria-pressed]):after {
-    content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important; }
+  /* .lintbug [class*="toggle"]:not([aria-pressed]):after {
+    content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important; } */
   .lintbug form button:not([type]):after {
     content: 'Is this a submit button, a reset button or just a button? Use type="submit", type="reset" or type="button".' !important; }
   .lintbug a:empty:not([aria-label]):not([aria-labelledby]):after,
