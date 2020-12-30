@@ -153,13 +153,13 @@ $lintbug-font: normal 14px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "H
 
   }
 
-  [class*="toggle"]:not([aria-pressed]) {
+  /* [class*="toggle"]:not([aria-pressed]) {
 
     &:after {
     content: 'If it is toggleable, you should supply an aria-pressed attribute.' !important;
     }
 
-  }
+  } */
 
   form button:not([type]) {
 
